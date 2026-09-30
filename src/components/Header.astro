@@ -1,0 +1,30 @@
+---
+import '../style/main.css';
+---
+<style>
+    header {
+        background-color: var(--sidebar-color);
+        color: var(--sidebar-text-color);
+        padding: 10px 20px 10px 10px;
+        overflow:auto;
+    }
+    #headerTitle {
+        display:inline-block;
+        float:left;
+    }
+    nav  {
+        display:inline-block;
+        float:right;
+        & a {
+            margin:10px;
+        }
+    }
+
+</style>
+<header>
+    <h1 id="headerTitle">The Bell Season VII</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/">Home2</a>
+    </nav>
+</header>
