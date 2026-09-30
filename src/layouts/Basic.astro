@@ -7,6 +7,7 @@ interface Props {
 const { title } = Astro.props;
 const { description = "The Bell Season VII" } = Astro.props;
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 <html lang="en">
     <head>
@@ -40,5 +41,6 @@ import Header from "../components/Header.astro";
     <body>
         <Header />
         <slot />
+        <Footer />
     </body>
 </html>
