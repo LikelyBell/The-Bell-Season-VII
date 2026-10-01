@@ -12,6 +12,9 @@
 body {
     background-color: var(--background-color);
     color: var(--text-color);
+    text-wrap:balance;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 a {
@@ -27,4 +30,8 @@ a {
 
 hr {
     border: 2px solid var(--separator-color)
+}
+
+main h1 {
+    text-align:center;
 }
