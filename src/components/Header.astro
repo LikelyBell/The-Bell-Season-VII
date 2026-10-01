@@ -5,26 +5,29 @@ import '../style/main.css';
     header {
         background-color: var(--sidebar-color);
         color: var(--sidebar-text-color);
-        padding: 10px 20px 10px 10px;
+        margin:10px 0px;
+        padding-left:10px;
         overflow:auto;
+        display:flex;
+        flex-flow: row wrap;
+        align-items: center;
     }
-    #headerTitle {
-        display:inline-block;
-        float:left;
-    }
-    nav  {
-        display:inline-block;
-        float:right;
-        & a {
-            margin:10px;
+    
+    header a {
+        background-color: var(--link-color);
+        color: var(--background-color);
+        padding: 100% 10px;
+        margin-left:10px;
+        &:visited {
+            background-color: var(--visited-color);
+            color: var(--background-color);
         }
     }
-
 </style>
 <header>
     <h1 id="headerTitle">The Bell Season VII</h1>
     <nav>
         <a href="/">Home</a>
-        <a href="/">Home2</a>
+        <a href="/404">404</a>
     </nav>
 </header>
