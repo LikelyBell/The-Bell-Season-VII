@@ -32,6 +32,6 @@ hr {
     border: 2px solid var(--separator-color)
 }
 
-main h1 {
+main h1,h2 {
     text-align:center;
 }

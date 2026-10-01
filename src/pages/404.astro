@@ -1,0 +1,14 @@
+---
+import Basic from '../layouts/Basic.astro'
+---
+<Basic title="404 Error">
+    <h1>404 Error</h1>
+    <h2 id="message">This page does not exist, or could not be found at this location.</h2>
+    <div style="text-align:center;width:100%;"><a href="/">Return to homepage</a></div>
+    <script>
+        const message = document.getElementById("message");
+        if (message) {
+            message.textContent = "The page " + location.pathname + " does not exist, or could not be found at this location.";
+        }
+    </script>
+</Basic>
