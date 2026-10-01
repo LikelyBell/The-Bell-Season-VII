@@ -1,11 +1,30 @@
 :root {
-    --background-color: #ffffff;
-    --text-color: #000000;
-    --sidebar-color: #999999;
+    /* Colors */
+    --background-color: #121212;
+    --text-color: #E0E0E0;
+    --sidebar-color: #444444;
     --sidebar-text-color: var(--text-color);
+    --link-color: #C2E0FF;
+    --visited-color: #FFD1ED;
+    --separator-color: #888888;
 }
 
 body {
     background-color: var(--background-color);
     color: var(--text-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+    &:hover {
+        font-weight: bold;
+    }
+    &:visited {
+        color: var(--visited-color);
+    }
+}
+
+hr {
+    border: 2px solid var(--separator-color)
 }
