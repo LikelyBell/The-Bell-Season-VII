@@ -85,12 +85,12 @@ var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
- coll[i].addEventListener("click", function() {
+ coll[i].addEventListener("click", function(this: HTMLButtonElement) {
  this.classList.toggle("active");
- var content = this.nextElementSibling;
- if (content.style.maxHeight){
- content.style.maxHeight = null;
- } else {
+ var content = this.nextElementSibling as HTMLElement | null;
+ if (content?.style.maxHeight){
+ content.style.maxHeight = "";
+ } else if (content) {
  content.style.maxHeight = content.scrollHeight + "px";
  }
  });
