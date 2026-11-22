@@ -1,0 +1,132 @@
+---
+import Basic from "../layouts/Basic.astro";
+---
+
+<Basic title="The Bell Season VII">
+
+<h1>Changelog</h1>
+
+<br>
+
+<h2>Most recent download: <a href="downloads">Update 7.3</a></h2>
+<br>
+<p>* Update 7.3 and before changelogs found in the Discord server</p>
+
+<br><br>
+
+<button type="button" class="collapsible">Bugfix 7.3.3</button>
+<div class="content">
+
+</div>
+
+<button type="button" class="collapsible">Bugfix 7.3.2</button>
+<div class="content">
+
+</div>
+
+<button type="button" class="collapsible">Bugfix 7.3.1</button>
+<div class="content">
+
+</div>
+
+<button type="button" class="collapsible">Update 7.3</button>
+<div class="content">
+<h1>Update 7.3</h1>
+<p>10/20/2026</p>
+
+<h2>Mods</h2>
+<p>Installed "Create: Repair"</p>
+<p>Installed "PacketFixer"</p>
+<p>Installed "Notes"</p>
+<p>Installed "Cubes Without Borders"</p>
+
+<h2>Bug Fixes & Config</h2>
+<p>Fixed Create train maps not showing</p>
+<p>Fixed issues with packet loss causing disconnects</p>
+<p>Adjusted keybind for Journeymap waypoints to right ALT</p>
+<p>Added keybind for notes to N</p>
+<p>Configured default RAM allocation to 8192MB (8GB)</p>
+<br>
+<p>Thanks to @DessieOwO (admin & development)</p>
+<p>Update 7.3 green-globe</p>
+</div>
+
+<button type="button" class="collapsible">Update 7.2.5</button>
+<div class="content">
+
+</div>
+
+<button type="button" class="collapsible">Update 7.2.4</button>
+<div class="content">
+
+</div>
+
+<button type="button" class="collapsible">Update 7.2.3</button>
+<div class="content">
+
+</div>
+
+<button type="button" class="collapsible">Update 7.2.2</button>
+<div class="content">
+
+</div>
+<button type="button" class="collapsible">Update 7.2.1</button>
+<div class="content">
+
+</div>
+
+<button type="button" class="collapsible">Update 7.2</button>
+<div class="content">
+
+</div>
+
+<button type="button" class="collapsible">Update 7.1.2</button>
+<div class="content">
+
+</div>
+
+<button type="button" class="collapsible">Update 7.1.1</button>
+<div class="content">
+
+</div>
+
+<button type="button" class="collapsible">Update 7.1</button>
+<div class="content">
+
+</div>
+
+<button type="button" class="collapsible">Beta 7.0.3</button>
+<div class="content">
+
+</div>
+
+<button type="button" class="collapsible">Beta 7.0.2</button>
+<div class="content">
+
+</div>
+
+<button type="button" class="collapsible">Beta 7.0.1</button>
+<div class="content">
+
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.maxHeight){
+content.style.maxHeight = null;
+} else {
+content.style.maxHeight = content.scrollHeight + "px";
+}
+});
+}
+</script>
+
+<!-- Javascript credit to W3Schools -->
+
+    </Basic>

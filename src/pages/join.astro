@@ -1,0 +1,103 @@
+---
+import Basic from "../layouts/Basic.astro";
+---
+
+<Basic title="The Bell Season VII">
+
+
+	<h1>Joining The Bell Season VII</h1>
+	<p>Note: The Bell Season VII is invite-only</p>
+	<br>
+
+	<p>Java Edition Minecraft is required for all operating systems. Bedrock is NOT supported.</p>
+	<!-- Credit to W3Schools -->
+
+<button type="button" class="collapsible">Windows</button>
+<div class="content">
+ <h1>Windows Compatibility</h1>
+ <p>Windows versions recommended for basic users or those who want the easiest setup. Follow the instructions; "How to Join".</p>
+ <li>Windows 11: Fully supported</li>
+ <li>Windows 10: Not tested</li>
+ <li>Previous Windows versions: Not supported</li>
+ <br>
+ <p>Requirements:</p>
+ <li>Minimum RAM: 8GB - HIGHLY recommended: 16GB</li>
+ <li>Minimum Storage: 2GB - Recommended: 10GB</li>
+ <li>Dedicated GPU (recommended for optimal performance, not required)</li>
+ <p>Tested on custom PC with AMD Ryzen 5 7600X, 32GB DDR5 RAM, RX 6750XT GPU (12GB VRAM), 2TB NVMe SSD</p>
+ <br>
+ <p>Windows 11 versions maintained by LikelyBell</p>
+</div>
+
+<button type="button" class="collapsible">MacOS</button>
+<div class="content">
+ <h1>MacOS Compatibility</h1>
+ <p>Compatible on all Apple Silicon Macs. Intel-based Macs may have compatibility issues. Follow the instructions; "How to Join".</p>
+ <li>MacOS 27 "Golden Gate": Fully supported, may be minor graphical & performance issues</li>
+ <li>MacOS 26 "Tahoe": Not tested</li>
+ <li>Previous MacOS versions: Not tested</li>
+ <br>
+ <p>Requirements:</p>
+ <li>Minimum RAM: 8GB - Recommended: 16GB</li>
+ <li>Minimum Storage: 2GB - Recommended: 10GB</li>
+ <li>Minimum CPU/GPU: Apple Silicon (M4, M5, etc) - Recommended: Apple Silicon Pro/Max (M5 Pro, M5 Max, etc)</li>
+ <br>
+ <p>Tested on MacBook Pro (M5 Pro), 24GB Memory, 1TB SSD, MacOS 27 "Golden Gate"</p>
+ <p>Version maintained by LikelyBell</p>
+</div>
+
+<button type="button" class="collapsible">Linux</button>
+<div class="content">
+	<h1>Linux Compatibility</h1>
+	<p>Linux compatibility is currently being tested and improved. Follow the instructions; "How to Join".</p>
+	<li>Ubuntu 26.04.4 (KDE/GNOME): In testing</li>
+	<li>Fedora 44 (KDE): Functional, may require additional setup</li>
+	<li>Other distributions: Not tested</li>
+	<p>Requirements currently unknown</p>
+	<p>Tested using virtual machines with 16GB RAM</p>
+	<br>
+	<p>Version maintained by LikelyBell & DessieOwO</p>
+</div>
+
+
+<h2>How to Join</h2>
+<ul>
+	<p>--Discord--</p>
+<li>Contact LikelyBell for a server invite</li>
+<li>Join the Discord server and contact LikelyBell for a whitelist request</li>
+<p>--Installation--</p>
+<li>Install Modrinth app</li>
+<li>Download the latest pack version <a href="downloads" target="_blank">here</a></li>
+<li>Click the + icon on the side bar of Modrinth "Create new instance"</li>
+<li>"Upload a modpack"</li>
+<li>Select the downloaded modpack from the ug.link download</li>
+<li>When the warning comes up, click "Install Anyway". This is a warning about third party content from a mod called Quark, which is a safe and legitimate mod.</li>
+<p>--Joining--</p>
+<li>Launch the newly downloaded instance</li>
+<li>Wait for the game to load (may take a while on first boot)</li>
+<li>Click "multiplayer"</li>
+<li>Join "The Bell Season VII" (if the server is not there, the IP is "mc.bellserver.us")</li>
+</ul>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+ coll[i].addEventListener("click", function() {
+ this.classList.toggle("active");
+ var content = this.nextElementSibling;
+ if (content.style.maxHeight){
+ content.style.maxHeight = null;
+ } else {
+ content.style.maxHeight = content.scrollHeight + "px";
+ }
+ });
+}
+ </script>
+
+ <!-- Javascript credit to W3Schools -->
+	
+</Basic>
+
